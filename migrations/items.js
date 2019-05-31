@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
             table.string('name', 255).notNullable();
             table.double('price', 255).notNullable();
             table.string('imageName', 255).notNullable();
-            table.string('desc', 255).notNullable();
+            table.string('description', 255).notNullable();
         })
 };
 
