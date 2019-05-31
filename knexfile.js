@@ -7,7 +7,7 @@ module.exports = {
         password: '',
         database: 'employees'
     },
-    migrtion: {
+    migration: {
         tableName: 'migrations',
         directory: path.resolve(__dirname, './migrations'),
     },
