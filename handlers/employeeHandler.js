@@ -12,9 +12,9 @@ function insertUser(request, response) {
     bcrypt.hash(password, 10, function(err, hashedPassword) {
         knex('user')
             .insert({
-                fname: request.body.fname,
-                lname: request.body.lname,
                 username: request.body.username,
+                address: request.body.address,
+                email: request.body.email,
                 password: hashedPassword
             }).then(data => {
                 response.json({

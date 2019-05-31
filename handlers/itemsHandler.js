@@ -10,7 +10,7 @@ function addItem(request, response) {
     knex('items')
         .insert({
             name: request.body.name,
-            desc: request.body.desc,
+            description: request.body.desc,
             imageName: request.body.imageName,
             price: request.body.price
         }).then(data => {
